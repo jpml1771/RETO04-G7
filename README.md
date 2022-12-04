@@ -1,13 +1,9 @@
-# f_gps_tracker
+# RETO 04 - GRUPO 07 - NRC 2289
 
-Un template para una aplicación de registro de ubicación usando la Hive y GeoLocator
+Se presenta reto 04 a partir de la plantilla con ajustes de interfáz para mejor visualización.
 
-Video: https://uninorte-my.sharepoint.com/:v:/g/personal/sastoquek_uninorte_edu_co/EZXEAMfBezFBo72vHb8QekUBup2-X97GABWyk_9XPiH0nA?e=YgUBV0
+Ejemplo desde consola de Chrome, a continuación:
 
-Funcional con Android, iOS y Web
+https://user-images.githubusercontent.com/41553721/205523650-360b71f8-cff3-4a0f-b1dd-628bc048411c.mp4
 
-![Tracker](https://user-images.githubusercontent.com/25647254/192416251-fdae4ea5-3149-4c08-bd3b-b37e23c48f34.gif)
 
-Solución:
-
-https://github.com/MisionTIC4b/f_gps_tracker
