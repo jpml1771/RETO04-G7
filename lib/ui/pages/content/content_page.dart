@@ -118,25 +118,35 @@ class ContentPage extends GetView<LocationController> {
                                 itemBuilder: (context, index) {
                                   final location = controller.locations[index];
                                   return Card(
-                                    child: ListTile(
-                                      isThreeLine: true,
-                                      leading: Icon(
-                                        Icons.gps_fixed_rounded,
-                                        color: Colors.amber[300],
-                                      ),
-                                      title: Text(
-                                          '${location.latitude}, ${location.longitude}'),
-                                      subtitle: Text(
-                                          'Fecha: ${location.timestamp.toIso8601String()}\n${location.precision.toUpperCase()}'),
-                                      trailing: IconButton(
-                                        onPressed: () {
-                                          // TODO: elimina la ubicacion [location] usando el controlador [deleteLocation]
-                                          controller.deleteLocation(
-                                              location: location);
-                                        },
-                                        icon: const Icon(
-                                          Icons.delete_forever_rounded,
-                                          color: Colors.red,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(8.0),
+                                      child: ListTile(
+                                        isThreeLine: true,
+                                        leading: Icon(
+                                          Icons.gps_fixed_rounded,
+                                          color: Colors.black,
+                                        ),
+                                        title: Padding(
+                                          padding: EdgeInsets.only(bottom: 8.0),
+                                          child: Text(
+                                              '${location.latitude}, ${location.longitude}',
+                                              style: TextStyle(
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.w700)),
+                                        ),
+                                        subtitle: Text(
+                                            'Fecha: ${location.timestamp.toIso8601String()}\n${location.precision.toUpperCase()}',
+                                            style: TextStyle(fontSize: 12)),
+                                        trailing: IconButton(
+                                          onPressed: () {
+                                            // TODO: elimina la ubicacion [location] usando el controlador [deleteLocation]
+                                            controller.deleteLocation(
+                                                location: location);
+                                          },
+                                          icon: const Icon(
+                                            Icons.delete_forever_rounded,
+                                            color: Colors.black,
+                                          ),
                                         ),
                                       ),
                                     ),
